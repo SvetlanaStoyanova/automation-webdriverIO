@@ -1,4 +1,5 @@
 import * as common from '../common/shared-pages';
+import * as registerDevToolsEvent from '../helpers/shared-functions'
 
 // describe('My Login application', () => {
 //     it('should login with valid credentials', async () => {
@@ -17,4 +18,14 @@ describe('Open TO-DO application', () => {
     });
 })
 
+describe('register an event listener to a Chrome DevTools event', () => {
+    it('dev tools network events should be printed', async () => {
+        // await browser.cdp('Network', 'enable')
+        // await browser.on('Network.responseReceived', (params) => {
+        //     console.log(`Loaded ${params.response.url}`)
+        // })
+        await registerDevToolsEvent.registerDevToolsEventListener();
+        await browser.url('https://www.google.com')
+    })
+})
 
