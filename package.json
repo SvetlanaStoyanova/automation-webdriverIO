@@ -1,0 +1,36 @@
+{
+  "name": "automation-webdriverIO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./configurations/wdio.conf.chrome.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlanaStoyanova/automation-webdriverIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvetlanaStoyanova/automation-webdriverIO/issues"
+  },
+  "homepage": "https://github.com/SvetlanaStoyanova/automation-webdriverIO#readme",
+  "dependencies": {
+    "@wdio/cli": "^7.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/register": "^7.14.5",
+    "@wdio/allure-reporter": "^7.9.0",
+    "@wdio/devtools-service": "^7.9.0",
+    "@wdio/local-runner": "^7.9.0",
+    "@wdio/mocha-framework": "^7.9.0",
+    "@wdio/spec-reporter": "^7.9.0",
+    "chromedriver": "^92.0.0",
+    "wdio-chromedriver-service": "^7.2.0"
+  }
+}
